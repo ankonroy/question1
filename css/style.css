@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #06323F;
+}
+
+.container {
+    width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+    background: #06323F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PART 1 */
+
+.container .parent_box {
+    width: 600px;
+    height: 300px;
+    background-color: #06323F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .parent_box .box {
+    width: 500px;
+    height: 270px;
+    border-radius: 35px;
+    background-color: #FFDE00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .parent_box .mini_box {
+    width: 20px;
+    height: 80px;
+    background-color: #FFDE00;
+}
+
+.container .parent_box .mini_box:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.container .parent_box .mini_box:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.container .parent_box .box .black_box {
+    width: 420px;
+    height: 190px;
+    border-radius: 20px;
+    background-color: #06323F;
+}
+
+/* PART 2 */
+
+.parent_box_2 {
+    width: 350px;
+    height: 350px;
+    background: #06323F;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.handle_box {
+    width: 125px;
+    height: 30px;
+    background: #FFDE00;
+    position: absolute;
+}
+
+.one {
+    top: 59%;
+    left: 40%;
+    rotate: 45deg;
+}
+
+.two {
+    top: 59%;
+    right: 40%;
+    rotate: -45deg;
+}
+
+.grib {
+    width: 80px;
+    height: 30px;
+    background: #FFDE00;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.g_one {
+    top: 63%;
+    left: 39.5%;
+    rotate: -45deg;
+}
+
+.g_two {
+    top: 63%;
+    right: 39.5%;
+    rotate: 45deg;
+}
+
+.sword {
+    width: 290px;
+    height: 45px;
+    background: #FFDE00;
+    position: absolute;
+}
+
+.sword_one {
+    top: 43%;
+    left: 41%;
+    rotate: -45deg;
+    z-index: 5;
+}
+
+.sword_two {
+    top: 43%;
+    right: 41%;
+    rotate: 45deg;
+    z-index: 10;
+}
+
+.sword_box {
+    width: 32px;
+    height: 32px;
+    background: #FFDE00;
+    position: absolute;
+}
+
+.sword_box_one {
+    top: 28.7%;
+    left: 39.75%;
+    /* rotate: -45deg; */
+}
+
+.sword_box_two {
+    top: 28.7%;
+    right: 39.75%;
+    /* rotate: 45deg; */
+}
+
+.sword_box_black {
+    width: 80px;
+    height: 80px;
+    background: #06323F;
+    position: absolute;
+    top: 52%;
+    left: 47%;
+    z-index: 7;
+    rotate: 45deg;
+    transform: translateX(-50%) translateY(-50%);
+}
